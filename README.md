@@ -5,7 +5,11 @@
 ## Tasks
 
 There are something that will do:
-* Change the UX design of 3 buttons of Brazil, Colombia and Mexico
+* Change Font
+* Create Column Extructure
+* Write basic HTML Skeleton
+* Change Plan Floor Icons
+* Change in all Language
 * Create some like a Google Cards with a native icons with each country
 
 
