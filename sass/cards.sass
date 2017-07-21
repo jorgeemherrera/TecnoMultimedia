@@ -3,11 +3,12 @@ $rltv: relative
 $blck: block
 $wht: #fff
 $mtsrt: 'Montserrat', sans-serif
+$upCase: uppercase
 .wrap
-  width: 100%
+  width: 80%
+  height: 100%
   max-width: 1920px
-  height: 800px
-  border-radius: .3em
+  border-radius: 0.3em
   -webkit-transition: $ease
   -moz-transition: $ease
   -ms-transition: $ease
@@ -16,63 +17,85 @@ $mtsrt: 'Montserrat', sans-serif
   transform: translate3d(0, 0, 0)
   -webkit-transform: translate3d(0, 0, 0)
   position: $rltv
-  top: 0
-  float: left
+  float: center
   margin-right: 2%
   position: $rltv
   text-align: center
-  overflow: hidden
-  height: 660px
-  height: 41.25rem
-  padding-top: 42px
-  padding-top: 2.625rem
+  margin: 0 auto
   .country
-    color: #fff
-    font-family: 'Merriweather', serif
+    color: $wht
+    font-family: "Merriweather", serif
     line-height: 2
-    font-size: 36px
-    font-size: 2.25rem
-    letter-spacing: 1px
-    letter-spacing: 0.0625rem
+    font-size: 4rem
+    letter-spacing: 0.2rem
+    padding: .4em
   .edition
     float: left
-    padding: 0em 7em 1em
     font-family: $mtsrt
+    font-weight: 100
     .numbers
       width: 100%
-      float: center
+      float: left
       margin-bottom: 10px
       .number
-        padding: 0 3px
+        padding: 0 114px
         .big_number
-          font-size: 6em
+          font-size: 11em
           line-height: 65px
           font-weight: 600
         .middle
-          width: 50%
+          width: 39%
           float: left
         .text_edition
-          width: 50%
+          width: 61%
           float: left
-          text-transform: uppercase
-          font-size: 2em
-          line-height: 1.2em
           text-align: -webkit-left
         .text_chico
-          font-size: 1.2rem
-          margin-top: 18px
+          text-transform: $upCase
+          font-size: 4em
+          margin-top: -.6em
+          line-height: 1.2em
   div.brazil
     background-color: #b3d76d
   div.mexico
-    background-color: red
-.edition
-  font-weight: 100
-  text-transform: upper
+    background-color: #D25757
+    .edition, .days, .month, .year, a[type="button"]
+      color: $wht
+  div.colombia
+    background-color: #DEC970
 .logo
   margin-top: -20px
-@media screen and (min-width: 769px)
+.days
+  font-size: 2.5em
+  font-weight: 300
+  font-family: $mtsrt
+.month
+  font-weight: 600
+  font-size: 2em
+  font-family: $mtsrt
+  text-transform: $upCase
+.year
+  font-family: $mtsrt
+  font-weight: 300
+  font-size: 2em
+  margin-bottom: 1em
+a[type="button"]
+  border: none
+  background: transparent
+  padding: .5em 2em
+  margin: 1em
+  color: #677251
+  text-transform: $upCase
+  font-size: 2em
+  font-weight: 300
+  font-family: $mtsrt
+  &.br
+    border: 0.05em solid #677251
+  &.mx
+    border: 0.05em solid $wht
+@media screen and (max-width: 769px)
   .edition
     padding: 1em 3em
-@media screen and (min-width: 310px)
+@media screen and (max-width: 310px)
   .edition
-    padding: 1em 5em
+    padding: 1em 7em
