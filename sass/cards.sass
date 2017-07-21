@@ -2,44 +2,65 @@ $ease: all 0.2s ease-in-out
 $rltv: relative
 $blck: block
 $wht: #fff
+$mtsrt: 'Montserrat', sans-serif
 .wrap
   width: 100%
   max-width: 1920px
   height: 800px
   border-radius: .3em
+  -webkit-transition: $ease
+  -moz-transition: $ease
+  -ms-transition: $ease
+  -o-transition: $ease
+  transition: $ease
+  transform: translate3d(0, 0, 0)
+  -webkit-transform: translate3d(0, 0, 0)
+  position: $rltv
+  top: 0
+  float: left
+  margin-right: 2%
+  position: $rltv
+  text-align: center
+  overflow: hidden
+  height: 660px
+  height: 41.25rem
+  padding-top: 42px
+  padding-top: 2.625rem
   .country
-    color: $wht
+    color: #fff
+    font-family: 'Merriweather', serif
     line-height: 2
     font-size: 36px
     font-size: 2.25rem
     letter-spacing: 1px
     letter-spacing: 0.0625rem
-    font-family: 'Merriweather', serif
-    webkit-transition: $ease
-    -moz-transition: $ease
-    -ms-transition: $ease
-    -o-transition: $ease
-    transition: $ease
-    transform: translate3d(0, 0, 0)
-    -webkit-transform: translate3d(0, 0, 0)
-    position: $rltv
-    top: 0
+  .edition
     float: left
-    margin-right: 2%
-    position: $rltv
-    text-align: center
-    width: 32%
-    overflow: hidden
-    height: 660px
-    height: 41.25rem
-    padding-top: 42px
-    padding-top: 2.625rem
-  .num
-    font-weight: 800
-    font-size: 2em
-    span
-      font-weight: 100 !important
-      text-transform: uppercase
+    padding: 0em 7em 1em
+    font-family: $mtsrt
+    .numbers
+      width: 100%
+      float: center
+      margin-bottom: 10px
+      .number
+        padding: 0 3px
+        .big_number
+          font-size: 6em
+          line-height: 65px
+          font-weight: 600
+        .middle
+          width: 50%
+          float: left
+        .text_edition
+          width: 50%
+          float: left
+          text-transform: uppercase
+          font-size: 2em
+          line-height: 1.2em
+          text-align: -webkit-left
+        .text_chico
+          font-size: 1.2rem
+          margin-top: 18px
   div.brazil
     background-color: #b3d76d
   div.mexico
@@ -47,3 +68,11 @@ $wht: #fff
 .edition
   font-weight: 100
   text-transform: upper
+.logo
+  margin-top: -20px
+@media screen and (min-width: 769px)
+  .edition
+    padding: 1em 3em
+@media screen and (min-width: 310px)
+  .edition
+    padding: 1em 5em
