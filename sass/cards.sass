@@ -1,19 +1,39 @@
 $ease: all 0.2s ease-in-out
 $rltv: relative
 $blck: block
+$wht: #fff
 .wrap
   width: 100%
   max-width: 1920px
   height: 800px
   border-radius: .3em
   .country
-    color: #fff
-    font-family: 'Merriweather', serif
+    color: $wht
     line-height: 2
     font-size: 36px
     font-size: 2.25rem
     letter-spacing: 1px
     letter-spacing: 0.0625rem
+    font-family: 'Merriweather', serif
+    webkit-transition: $ease
+    -moz-transition: $ease
+    -ms-transition: $ease
+    -o-transition: $ease
+    transition: $ease
+    transform: translate3d(0, 0, 0)
+    -webkit-transform: translate3d(0, 0, 0)
+    position: $rltv
+    top: 0
+    float: left
+    margin-right: 2%
+    position: $rltv
+    text-align: center
+    width: 32%
+    overflow: hidden
+    height: 660px
+    height: 41.25rem
+    padding-top: 42px
+    padding-top: 2.625rem
   .num
     font-weight: 800
     font-size: 2em
@@ -24,26 +44,6 @@ $blck: block
     background-color: #b3d76d
   div.mexico
     background-color: red
-.country
-  webkit-transition: $ease
-  -moz-transition: $ease
-  -ms-transition: $ease
-  -o-transition: $ease
-  transition: $ease
-  transform: translate3d(0, 0, 0)
-  -webkit-transform: translate3d(0, 0, 0)
-  position: $rltv
-  top: 0
-  float: left
-  margin-right: 2%
-  position: $rltv
-  text-align: center
-  width: 32%
-  overflow: hidden
-  height: 660px
-  height: 41.25rem
-  padding-top: 42px
-  padding-top: 2.625rem
 .edition
   font-weight: 100
   text-transform: upper
