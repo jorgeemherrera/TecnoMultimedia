@@ -24,9 +24,12 @@
     color: #fff;
     font-family: "Merriweather", serif;
     line-height: 2;
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: 0.2rem;
-    padding: 0.4em; }
+    padding: 0.7em; }
+  .wrap .text {
+    z-index: 2;
+    position: relative; }
   .wrap .edition {
     float: left;
     font-family: "Montserrat", sans-serif;
@@ -53,20 +56,50 @@
           font-size: 4em;
           margin-top: -0.6em;
           line-height: 1.2em; }
-  .wrap div.brazil, .wrap div.mexico, .wrap div.colombia {
-    background-repeat: no-repeat;
-    background-position: 0em 19em; }
   .wrap div.brazil {
-    background-image: url("../img/brasil.svg");
     background-color: #b3d76d; }
+    .wrap div.brazil::after {
+      content: "";
+      background-image: url("../img/brasil.svg");
+      background-repeat: no-repeat;
+      background-position: 0em 17em;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1; }
   .wrap div.mexico {
-    background-image: url("../img/mexico.svg");
-    background-color: #D25757; }
+    background-color: #a84747; }
+    .wrap div.mexico::after {
+      content: "";
+      background-image: url("../img/mexico.svg");
+      background-repeat: no-repeat;
+      background-position: 0em 17em;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1; }
     .wrap div.mexico .edition, .wrap div.mexico .days, .wrap div.mexico .month, .wrap div.mexico .year {
       color: #fff; }
   .wrap div.colombia {
-    background-image: url("../img/colombia.svg");
     background-color: #DEC970; }
+    .wrap div.colombia::after {
+      content: "";
+      background-image: url("../img/colombia.svg");
+      background-repeat: no-repeat;
+      background-position: 0em 17em;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1; }
 
 .logo {
   margin-top: -20px; }
@@ -84,9 +117,9 @@
 
 .year {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  margin-bottom: 1em; }
+  font-weight: 600;
+  font-size: 3em;
+  margin-bottom: 0.2em; }
 
 a[type="button"] {
   border: none;
@@ -113,11 +146,39 @@ a[type="button"] {
     color: #fff;
     transition: all 0.2s ease-in-out; }
     a[type="button"].mx:hover {
-      color: #b24a4a;
-      border-color: #b24a4a; }
+      color: #dca61c;
+      border-color: #dca61c; }
     a[type="button"].mx::before {
       -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+  a[type="button"].co {
+    border: 0.05em solid #677251;
+    color: #677251;
+    transition: all 0.2s ease-in-out; }
+    a[type="button"].co:hover {
+      color: #1560AD;
+      border-color: #1560AD; }
+    a[type="button"].co::before {
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+
+.white-space.space-mini {
+  padding: 5px 0; }
+
+.white-space.space-xsmall {
+  padding: 10px 0; }
+
+.white-space.space-small {
+  padding: 20px 0; }
+
+.white-space.space-medium {
+  padding: 30px 0; }
+
+.white-space.space-big {
+  padding: 50px 0; }
+
+.white-space.space-huge {
+  padding: 100px 0; }
 
 @media screen and (max-width: 769px) {
   .edition {

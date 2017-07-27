@@ -2,6 +2,7 @@ $ease: all 0.2s ease-in-out
 $rltv: relative
 $blck: block
 $wht: #fff
+$gray: #677251
 $mtsrt: 'Montserrat', sans-serif
 $upCase: uppercase
 .wrap
@@ -30,9 +31,12 @@ $upCase: uppercase
     color: $wht
     font-family: "Merriweather", serif
     line-height: 2
-    font-size: 4rem
+    font-size: 4.5rem
     letter-spacing: 0.2rem
-    padding: .4em
+    padding: .7em
+  .text
+    z-index: 2
+    position: relative
   .edition
     float: left
     font-family: $mtsrt
@@ -59,20 +63,50 @@ $upCase: uppercase
           font-size: 4em
           margin-top: -.6em
           line-height: 1.2em
-  div.brazil, div.mexico, div.colombia
-    background-repeat: no-repeat
-    background-position: 0em 19em
   div.brazil
-    background-image: url('../img/brasil.svg')
     background-color: #b3d76d
+    &::after
+      content: ''
+      background-image: url('../img/brasil.svg')
+      background-repeat: no-repeat
+      background-position: 0em 17em
+      opacity: 0.6
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      position: absolute
+      z-index: 1
   div.mexico
-    background-image: url('../img/mexico.svg')
-    background-color: #D25757
+    background-color: #a84747
+    &::after
+      content: ''
+      background-image: url('../img/mexico.svg')
+      background-repeat: no-repeat
+      background-position: 0em 17em
+      opacity: 0.6
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      position: absolute
+      z-index: 1
     .edition, .days, .month, .year
       color: $wht
   div.colombia
-    background-image: url('../img/colombia.svg')
     background-color: #DEC970
+    &::after
+      content: ''
+      background-image: url('../img/colombia.svg')
+      background-repeat: no-repeat
+      background-position: 0em 17em
+      opacity: 0.6
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      position: absolute
+      z-index: 1
 .logo
   margin-top: -20px
 .days
@@ -86,9 +120,9 @@ $upCase: uppercase
   text-transform: $upCase
 .year
   font-family: $mtsrt
-  font-weight: 300
-  font-size: 2em
-  margin-bottom: 1em
+  font-weight: 600
+  font-size: 3em
+  margin-bottom: .2em
 a[type="button"]
   border: none
   background: transparent
@@ -100,8 +134,8 @@ a[type="button"]
   font-family: $mtsrt
   display: $blck
   &.br
-    border: 0.05em solid #677251
-    color: #677251
+    border: 0.05em solid $gray
+    color: $gray
     transition: $ease
     &:hover
       color: #3f3f3f
@@ -114,11 +148,33 @@ a[type="button"]
     color: #fff
     transition: $ease
     &:hover
-      color: #b24a4a
-      border-color: #b24a4a
+      color: #dca61c
+      border-color: #dca61c
     &::before
       -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
       transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+  &.co
+    border: 0.05em solid $gray
+    color: $gray
+    transition: $ease
+    &:hover
+      color: #1560AD
+      border-color: #1560AD
+    &::before
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+.white-space.space-mini
+  padding: 5px 0
+.white-space.space-xsmall
+  padding: 10px 0
+.white-space.space-small
+  padding: 20px 0
+.white-space.space-medium
+  padding: 30px 0
+.white-space.space-big
+  padding: 50px 0
+.white-space.space-huge
+  padding: 100px 0
 
 @media screen and (max-width: 769px)
   .edition

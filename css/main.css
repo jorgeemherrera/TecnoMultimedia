@@ -21,8 +21,7 @@ body {
 }
 /* nav menu styles */
 
-#nav,
-#nav ul {
+#nav, #nav ul {
     list-style: none;
     font: 10px verdana, sans-serif;
     border: 1px solid #000;
@@ -115,6 +114,6 @@ body {
     left: -9999px;
     top: -9999px
 }
-.red{
-  color: #EC5A58;
+.red {
+    color: #EC5A58;
 }
