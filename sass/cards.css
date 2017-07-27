@@ -16,7 +16,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  transition: 0.3s ease-in;
+  transition: all 0.2s ease-in-out;
   cursor: pointer; }
   .wrap:hover {
     box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.3); }
@@ -53,13 +53,19 @@
           font-size: 4em;
           margin-top: -0.6em;
           line-height: 1.2em; }
+  .wrap div.brazil, .wrap div.mexico, .wrap div.colombia {
+    background-repeat: no-repeat;
+    background-position: 0em 19em; }
   .wrap div.brazil {
+    background-image: url("../img/brasil.svg");
     background-color: #b3d76d; }
   .wrap div.mexico {
+    background-image: url("../img/mexico.svg");
     background-color: #D25757; }
-    .wrap div.mexico .edition, .wrap div.mexico .days, .wrap div.mexico .month, .wrap div.mexico .year, .wrap div.mexico a[type="button"] {
+    .wrap div.mexico .edition, .wrap div.mexico .days, .wrap div.mexico .month, .wrap div.mexico .year {
       color: #fff; }
   .wrap div.colombia {
+    background-image: url("../img/colombia.svg");
     background-color: #DEC970; }
 
 .logo {
@@ -86,16 +92,32 @@ a[type="button"] {
   border: none;
   background: transparent;
   padding: 0.5em 2em;
-  margin: 1em;
-  color: #677251;
+  margin: 1em 2em;
   text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif; }
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  display: block; }
   a[type="button"].br {
-    border: 0.05em solid #677251; }
+    border: 0.05em solid #677251;
+    color: #677251;
+    transition: all 0.2s ease-in-out; }
+    a[type="button"].br:hover {
+      color: #3f3f3f;
+      border-color: #3f3f3f; }
+    a[type="button"].br::before {
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
   a[type="button"].mx {
-    border: 0.05em solid #fff; }
+    border: 0.05em solid #fff;
+    color: #fff;
+    transition: all 0.2s ease-in-out; }
+    a[type="button"].mx:hover {
+      color: #b24a4a;
+      border-color: #b24a4a; }
+    a[type="button"].mx::before {
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 @media screen and (max-width: 769px) {
   .edition {
@@ -104,4 +126,4 @@ a[type="button"] {
   .edition {
     padding: 1em 7em; } }
 
-/*# sourceMappingURL=card.css.map */
+/*# sourceMappingURL=cards.css.map */

@@ -22,7 +22,7 @@ $upCase: uppercase
   position: $rltv
   text-align: center
   margin: 0 auto
-  transition: .4s ease-in
+  transition: $ease
   cursor: pointer
   &:hover
     box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.3)
@@ -59,13 +59,19 @@ $upCase: uppercase
           font-size: 4em
           margin-top: -.6em
           line-height: 1.2em
+  div.brazil, div.mexico, div.colombia
+    background-repeat: no-repeat
+    background-position: 0em 19em
   div.brazil
+    background-image: url('../img/brasil.svg')
     background-color: #b3d76d
   div.mexico
+    background-image: url('../img/mexico.svg')
     background-color: #D25757
-    .edition, .days, .month, .year, a[type="button"]
+    .edition, .days, .month, .year
       color: $wht
   div.colombia
+    background-image: url('../img/colombia.svg')
     background-color: #DEC970
 .logo
   margin-top: -20px
@@ -87,16 +93,33 @@ a[type="button"]
   border: none
   background: transparent
   padding: .5em 2em
-  margin: 1em
-  color: #677251
+  margin: 1em 2em
   text-transform: $upCase
-  font-size: 2em
-  font-weight: 300
+  font-size: 1.5em
+  font-weight: 600
   font-family: $mtsrt
+  display: $blck
   &.br
     border: 0.05em solid #677251
+    color: #677251
+    transition: $ease
+    &:hover
+      color: #3f3f3f
+      border-color: #3f3f3f
+    &::before
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
   &.mx
     border: 0.05em solid $wht
+    color: #fff
+    transition: $ease
+    &:hover
+      color: #b24a4a
+      border-color: #b24a4a
+    &::before
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
 @media screen and (max-width: 769px)
   .edition
     padding: 1em 3em
