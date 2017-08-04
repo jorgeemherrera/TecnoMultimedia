@@ -184,6 +184,10 @@ a[type="button"] {
 .phones {
   line-height: 1.2em; }
 
+.description {
+  font-size: 1.4em;
+  line-height: 1.3em; }
+
 @media screen and (max-width: 769px) {
   .edition {
     padding: 1em 3em; } }
