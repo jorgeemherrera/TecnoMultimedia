@@ -1,10 +1,10 @@
 # [TecnoMultimedia InfoComm](http://www.tecnomultimedia.com/)
 
-[TecnoMultimedia InfoComm](http://www.tecnomultimedia.com/) have 3 events, TecnoMultimedia InfoComm Brazil [TMICB](http://www.tecnomultimidia.com.br/), TecnoMultimedia InfoComm Colombia [TMICC](http://www.tecnomultimedia.com.co/) & TecnoMultimedia InfoComm Mexico [TMICM](http://www.tecnomultimedia.com.mx/)
+[TecnoMultimedia InfoComm](http://www.tecnomultimedia.com/) has 3 events, TecnoMultimedia InfoComm Brazil [TMICB](http://www.tecnomultimidia.com.br/), TecnoMultimedia InfoComm Colombia [TMICC](http://www.tecnomultimedia.com.co/) & TecnoMultimedia InfoComm Mexico [TMICM](http://www.tecnomultimedia.com.mx/)
 
 ## Tasks
 
-There are something that will do:
+There are something that I'll do:
 * Change Font
 * Create Column Extructure
 * Write basic HTML Skeleton

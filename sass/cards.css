@@ -181,6 +181,9 @@ a[type="button"] {
 .white-space.space-huge {
   padding: 100px 0; }
 
+.phones {
+  line-height: 1.2em; }
+
 @media screen and (max-width: 769px) {
   .edition {
     padding: 1em 3em; } }

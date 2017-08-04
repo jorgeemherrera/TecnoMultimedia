@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 p, li {
     font-size: 1.1em;
@@ -25,7 +26,6 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 hr.star-light,
@@ -80,7 +80,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     font-weight: 400;
 }
