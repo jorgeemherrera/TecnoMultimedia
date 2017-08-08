@@ -13,8 +13,11 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #FF0000;
-    /**#18bc9c;**/
+    color: #eb6060;
+    transition: .2s ease-in;
+}
+a:hover{
+  color:#233140;
 }
 .float-left {
     float: left;
