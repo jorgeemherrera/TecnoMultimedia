@@ -1,5 +1,5 @@
 .wrap {
-  width: 80%;
+  width: 85%;
   height: 100%;
   max-width: 1920px;
   border-radius: 0.3em;
@@ -39,7 +39,7 @@
       float: left;
       margin-bottom: 10px; }
       .wrap .edition .numbers .number {
-        padding: 0 114px; }
+        padding: 0 70px; }
         .wrap .edition .numbers .number .big_number {
           font-size: 11em;
           line-height: 65px;
@@ -189,11 +189,55 @@ a[type="button"] {
   font-size: 1.4em;
   line-height: 1.3em; }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1920px) {
   .edition {
-    padding: 1em 3em; } }
-@media screen and (max-width: 310px) {
+    padding: 1em 4em; } }
+@media screen and (max-width: 1440px) {
+  .wrap {
+    width: 90%; }
+
   .edition {
-    padding: 1em 7em; } }
+    padding: 1em; } }
+@media screen and (max-width: 768px) {
+  .edition {
+    padding: 1em 8em; } }
+@media screen and (max-width: 667px) {
+  .edition {
+    padding: 1em 2em; }
+
+  .wrap {
+    width: 90%; }
+    .wrap .edition .numbers .number {
+      padding: 0 128px; }
+
+  .days {
+    font-size: 3.5em; }
+
+  .month {
+    font-size: 2.7em; } }
+@media screen and (max-width: 414px) {
+  .edition {
+    padding: 1em 1em; }
+
+  .wrap {
+    width: 90%; }
+    .wrap .edition .numbers .number {
+      padding: 0 41px; } }
+@media screen and (max-width: 375px) {
+  .edition {
+    padding: 1em 0em; }
+
+  .wrap {
+    width: 90%; }
+    .wrap .edition .numbers .number {
+      padding: 0 41px; } }
+@media screen and (max-width: 360px) {
+  .edition {
+    padding: 1em 2em; }
+
+  .wrap {
+    width: 90%; }
+    .wrap .edition .numbers .number {
+      padding: 0 10px; } }
 
 /*# sourceMappingURL=cards.css.map */
