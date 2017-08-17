@@ -159,6 +159,9 @@ header .intro-text .skills {
 section {
     padding: 60px 0
 }
+section#eventos{
+  padding: 0;
+}
 section h2 {
     margin: 0;
     font-size: 3em
